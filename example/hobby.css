@@ -1,21 +1,25 @@
-.fun:hover{
-    transform: scale(12,18);
-    top: 131px;
-    right: 50px;
+*{
+    padding: 0;
+    margin: 0;
 }
 
-#head1{
+.fun:hover {
+    transform: scale(10, 18);
+}
+
+
+#head{
     width: 1000px;
     height: 58px;
-    margin: auto;
+    margin: 0 auto;
     background-color: #fa3148;
     border: 1px white solid;
     position: relative;
 }
 
-img,span{
-    color: white;
+#head img,span{
     position: relative;
+    color: white;
     left: 50px;
     top: 8px;
     vertical-align: middle;
@@ -33,139 +37,57 @@ a{
     top: 10px;
 }
 
-#head2{
+#content{
     width: 1000px;
-    height: 345px;
+
     background: wheat;
-    margin: auto;
+    margin: 0 auto;
     border: 1px solid wheat;
 }
 
-#head2 h3{
+#content h3{
     text-align: center;
+    margin: 10px;
 }
-#head2 img{
+
+.box1 img{
     width: 180px;
     height: 250px;
-    border: 5px solid #f8e0e0;
-    border-bottom: 20px solid #f8e0e0;
 }
 
-#head3{
-    width: 1000px;
-    height: 370px;
-    margin: auto;
-    background: wheat;
-    border: 1px solid wheat;
+.box1{
+    width: 780px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+
 }
-#head3 h3{
+
+.movie{
+    width: 190px;
+    padding: 5px 0 0 0;
+
+    background: #f6e1e9;
     text-align: center;
 }
-#head3 img{
-    border: 5px solid #f8e0e0;
-    border-bottom: 20px solid #f8e0e0;
+
+.box2{
+    width: 780px;
+    margin: 2px auto;
+
+    display: flex;
+    justify-content: space-between;
 }
 
-.movie1{
-    position: relative;
-    left: 50px;
-}
-.movie1 p{
-    font-size: 12px;
-    position: absolute;
-    bottom: -18px;
-    left: 115px ;
+.block{
+    width: 190px;
+    padding: 5px 0 0 0;
+    align-self: baseline;
+    background: #f6e1e9;
+    text-align: center;
 }
 
-.movie2{
-    position: relative;
-    bottom: 275px;
-    left: 248px;
-}
-
-.movie2 p{
-    font-size: 12px;
-    position: absolute;
-    bottom: -18px;
-    left: 115px ;
-}
-
-.movie3{
-    position: relative;
-    bottom: 550px;
-    left: 444px;
-}
-
-.movie3 p{
-    font-size: 12px;
-    position: absolute;
-    bottom: -18px;
-    left: 115px ;
-}
-
-.movie4{
-    position: relative;
-    bottom: 825px;
-    left: 640px;
-}
-
-.movie4 p{
-    font-size: 12px;
-    position: absolute;
-    bottom: -18px;
-    left: 115px ;
-}
-
-.block1{
-    position: relative;
-    top: 20px;
-    left: 50px;
-}
-.block1 p{
-    font-size: 12px;
-    position: absolute;
-    bottom: -18px;
-    left: 115px ;
-}
-
-.block2{
-    position: relative;
-    bottom: 275px;
-    left: 248px;
-}
-
-.block2 p{
-    font-size: 12px;
-    position: absolute;
-    bottom: -18px;
-    left: 115px ;
-}
-
-.block3{
-    position: relative;
-    bottom: 550px;
-    left: 444px;
-}
-
-.block3 p{
-    font-size: 12px;
-    position: absolute;
-    bottom: -18px;
-    left: 115px ;
-}
-
-.block4{
-    position: relative;
-    bottom: 825px;
-    left: 640px;
-}
-
-.block4 p{
-    font-size: 12px;
-    position: absolute;
-    bottom: -18px;
-    left: 115px ;
-}
 
 #bottom{
     width: 1000px;
@@ -180,13 +102,13 @@ a{
     width: 500px;
     position: absolute;
     top: 70px;
-    left: 53px;
+    left: 60px;
 }
 
 .photo{
     position: absolute;
-    top: 12px;
-    right: 210px;
+    top: 25px;
+    right: 160px;
 }
 
 .line {
