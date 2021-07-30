@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品列表添加和删除</title>
+</head>
+
+<style>
+  .danger{
+    color:red;
+  }
+</style>
+
+<body>
+
+<h2>商品列表添加和删除</h2>
+<div id="message"></div>
+<ul id="goods">
+  <li>苹果</li>
+</ul>
+<div>
+  <button id="delAllBtn">删除所有商品</button>
+</div>
+
+<div>
+  <span>名称:</span>
+  <input type="text" id="name">
+  <button id="add">添加</button>
+</div>
+
+<script src="../danMu/js/jquery-3.3.1.js"></script>
+<script>
+  $(document).ready(function(){
+      $('#add').click(function(){
+        var val= $("#name").val();
+        $("#name").val("");
+        console.log("value:",val);
+        $("#goods").append('<li>' + val + '</li>');
+        $("#message").html("添加了新的商品: " + val);
+        $("#message").removeClass("danger");
+        //发现新增的商品无法删除,需要给li重新添加事件
+        $("#goods li").click(function(){
+          $("#message").html("删除了商品: " + $(this).text());
+          $("#message").addClass("danger");
+          $(this).remove();
+        });
+      });
+
+      $("#goods li").click(function (){
+        $("#message").html("删除了商品: " + $(this).text());
+        $("#message").addClass("danger");
+        $(this).remove();
+      });
+      //删除所有
+      $("#delAllBtn").click(function (){
+        $("#goods li").remove();
+      });
+
+
+      $("#name").keyup(function (e){
+        if(e.keyCode ===13 )
+        {
+          $("#add").click();
+        }
+      });
+  });
+</script>
+
+</body>
+</html>
