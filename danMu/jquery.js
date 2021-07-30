@@ -8,7 +8,7 @@ $(document).ready(function() {
         //获取弹幕墙对象
         var $screen = $(document.getElementById("screen"));
         //设置弹幕体出现时的上边距，为任意值
-        var top = Math.random() * $screen.height()+40;
+        var top = Math.random() * $screen.height()+20;
         var color = "#"+(Math.random()*0x1000000<<0).toString(16);
         var font = Math.floor(Math.random()*20 + 12);
         //设置弹幕体的上边距和左边距
