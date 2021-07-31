@@ -5,6 +5,7 @@
 
 .fun:hover {
     transform: scale(10, 18);
+    margin-top: 150px;
 }
 
 
