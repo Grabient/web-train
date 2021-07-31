@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 1200px;
+    margin: 0 auto;
+    background: #eadfdf;
+}
+
+.box1{
+    width: 1000px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head1 span{
+    position: relative;
+    top: -6px;
+}
+.head2 a{
+    color: black;
+    text-decoration: none;
+}
+
+/*section 部分*/
+
+.mySlides {display:none}
+.mySlides:first-child{
+    display: block;
+}
+/* 幻灯片容器 */
+.slideshow-container {
+    max-width: 1200px;
+    height: 600px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* 下一张 & 上一张 按钮 */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* 定位 "下一张" 按钮靠右 */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* 标题文本 */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* 标记符号 */
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+    bottom: 25px;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* 淡出动画 */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/*content 部分*/
+.content{
+    width: 1200px;
+    margin: 0 auto;
+    background: #eee8e8;
+    border: 1px solid #c272fc;
+}
+
+/*服务范围*/
+
+.box2{
+    width: 900px;
+    margin: 0 auto;
+    background-color: #bbb5b5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.label{
+    width: 225px;
+    height: 225px;
+    border: 1px solid red;
+}
+
+/*figure 部分*/
+
+figure{
+    width: 900px;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+figure img{
+    width: 440px;
+    height: 440px;
+    margin: 10px;
+}
+
+.b{
+    width: 450px;
+    padding: 0 30px;
+}
+
+h3{
+    text-align: center;
+    margin: 15px 0;
+}
+
+.bottom{
+    position: relative;
+    font-size: 15px;
+    font-weight: bolder;
+    top: 200px;
+}
+
+.box3{
+    width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.news{
+    width: 210px;
+    height: 250px;
+    border: 1px red solid;
+}
+
+footer{
+    width: 1200px;
+    height: 320px;
+    margin: 0 auto;
+    padding: 25px 0;
+    background: #bdb4b4;
+    position: relative;
+}
+
+.box4{
+    width: 900px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #e3fd6c;
+    justify-content: space-around;
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    height:2px;
+    text-align: center;
+    border:none;
+    border-top:1px solid black;
+    opacity: 30%;
+    bottom: 40px;
+}
+
+.word{
+    position: absolute;
+    left: 50%;
+    font-size: 12px;
+    bottom: 10px;
+}
