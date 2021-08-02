@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>漫威</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="java script.js"></script>
+    <script src="../danMu/js/jquery-3.3.1.js"></script>
 </head>
 <body>
 
@@ -48,7 +49,7 @@
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
 
-        <div style="text-align:center">
+        <div id="button" style="text-align:center" >
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
@@ -58,12 +59,24 @@
 </section>
 
 <div class="content">
-    <h3>服务范围</h3>
+    <h3 id="h3">服务范围</h3>
     <div class="box2">
-        <div class="label"><img src="" alt=""></div>
-        <div class="label"><img src="" alt=""></div>
-        <div class="label"><img src="" alt=""></div>
-        <div class="label"><img src="" alt=""></div>
+        <div class="label">
+            <img src="images/label1.png" alt="">
+            <p>拯救地球</p>
+        </div>
+        <div class="label">
+            <img src="images/label2.png" alt="">
+            <p>英雄合照</p>
+        </div>
+        <div class="label">
+            <img src="images/label3.png" alt="">
+            <p>寻找原石</p>
+        </div>
+        <div class="label">
+            <img src="images/label4.png" alt="">
+            <p>宇宙旅行</p>
+        </div>
     </div>
     <h3>团队介绍</h3>
     <figure>
@@ -133,19 +146,48 @@
     </figure>
     <h3>新闻动态</h3>
     <div class="box3">
-        <div class="news"><img src="" alt=""></div>
-        <div class="news"><img src="" alt=""></div>
-        <div class="news"><img src="" alt=""></div>
-        <div class="news"><img src="" alt=""></div>
+        <div class="news">
+            <img src="images/new1.png" alt="">
+            <p>7月31日，吴亦凡因涉嫌强奸罪，目前已被朝阳公安分局依法刑事拘留，案件侦办工作正在进
+                一步开展。8月1日晚，吴亦凡及其工作室微博账号均已被注销。</p>
+        </div>
+        <div class="news">
+            <img src="images/new2.png" alt="">
+            <p>一起“多人运动”,罗志祥有了一个“时间管理大师”的美称。 其实在周扬青公开控诉罗志祥
+                “多人运动”之前,“极限男人帮”的兄弟们就曾告诫罗志祥“对周扬青好点”。 </p>
+        </div>
+        <div class="news">
+            <img src="images/new3.png" alt="">
+            <p>艳照门是2008年初，网友奇拿在天涯社区发布了一系列关于陈冠希和一些女艺人之间的自拍
+                私密照和其他图片（讳称“艳照”），在网络反响极大并引发多方关注。</p>
+        </div>
+        <div class="news">
+            <img src="images/new4.png" alt="">
+            <p>小罗伯特·唐尼的父亲老罗伯特·唐尼是一名电影编剧、导演，创作了很多艺术电影，拥有一
+                半的立陶宛犹太人血统、四分之一的匈牙利犹太人血统、四分之一的爱尔兰血统.
+            </p>
+        </div>
     </div>
 </div>
 
 <footer>
     <div class="box4">
-        <div><img src="" alt=""></div>
-        <div><img src="" alt=""></div>
-        <div><img src="" alt=""></div>
-        <div><img src="" alt=""></div>
+        <div class="evil">
+            <img src="images/add.png" width="120px" height="110px">
+            <p>罗门镇天魂村88号</p>
+        </div >
+        <div class="evil">
+            <img src="images/vector.png" width="130px" height="110px">
+            <p>admin@example.com</p>
+        </div>
+        <div class="evil">
+            <img src="images/service.png" width="120px" height="110px">
+            <p>PC-12138</p>
+        </div>
+        <div class="evil">
+            <img src="images/code.png" width="200px" height="200px">
+            <p>扫一扫,地狱终生游</p>
+        </div>
     </div>
     <div class="line"></div>
     <div class="word">
