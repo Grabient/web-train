@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/java%20script.js"></script>
     <script src="../danMu/js/jquery-3.3.1.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 </head>
 <body>
 
@@ -60,132 +62,54 @@
 
 <div class="content">
     <h3 id="h3">服务范围</h3>
-    <div class="box2">
-        <div class="label">
-            <img src="images/label1.png" alt="">
-            <p>拯救地球</p>
-        </div>
-        <div class="label">
-            <img src="images/label2.png" alt="">
-            <p>英雄合照</p>
-        </div>
-        <div class="label">
-            <img src="images/label3.png" alt="">
-            <p>寻找原石</p>
-        </div>
-        <div class="label">
-            <img src="images/label4.png" alt="">
-            <p>宇宙旅行</p>
-        </div>
+    <div class="box2" >
+<!--        <div class="label">-->
+<!--            <img src="images/label1.png" alt="">-->
+<!--            <p>拯救地球</p>-->
+<!--        </div>-->
+<!--        <div class="label">-->
+<!--            <img src="images/label2.png" alt="">-->
+<!--            <p>英雄合照</p>-->
+<!--        </div>-->
+<!--        <div class="label">-->
+<!--            <img src="images/label3.png" alt="">-->
+<!--            <p>寻找原石</p>-->
+<!--        </div>-->
+<!--        <div class="label">-->
+<!--            <img src="images/label4.png" alt="">-->
+<!--            <p>宇宙旅行</p>-->
+<!--        </div>-->
     </div>
+
     <h3>团队介绍</h3>
-    <figure>
-        <div class="iron">
-            <img src="images/iron.jpg" width="380px" height="380px">
-        </div>
-        <div class="b">
-            <div id="iron">
-                <h3>托尼 史塔克</h3>
-
-                <span>赫克设计出托尼·斯塔克与其秘书佩珀·波茨的面容。斯坦·李参照霍华德·休斯
-                设计出斯塔克的个性，他解释说：“霍华德·修斯是我们这个时代中最多姿多彩的人
-                物之一。他是位发明家、冒险家、亿万富豪、花花公子，还是个疯子。”
-            </span>
-                <div class="bottom">
-                    <span>能    力：斯塔克可以控制自己皮肤下的装甲内层，让装甲由四肢上数个出口显
-                    现出来，在皮下形成金色的神经界面。当史塔克进入此状态时，他可以以感应远端控
-                    制铁甲装，而且即使装甲在一百英里远处外斯塔克仍可在任何时候着装。
-                    </span>
-                </div>
-            </div>
-        </div>
+    <figure class="figure">
     </figure>
 
-    <figure>
-        <div class="b">
-            <div class="spider">
-                <h3>彼得帕克</h3>
 
-                <span>这个未成年男孩将会是一个独立的英雄，而不是其他成年英雄的助手，没有任何
-                英雄导师所传授的经验与技巧，他将独自成长，孤身上路。身为一个青少年，彼得
-                除了面对那些超级英雄该肩负的责任，同时也必须应付一些青春期时会遇到的麻烦。
-            </span>
-                <div class="bottom">
-                    <span>能    力：蛛丝发射器——不但能作为攻击性的武器，而且可以粘附在大多数物体
-                    上，耐高温、韧性极佳。身着红色紧身衣的帕克也拥有着超越常人的视力、听力，能
-                     够预知危险，同时拥有更强健的肌肉，至少十五吨力量以上。
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div>
-            <img src="images/spider.jpg" width="400px" height="400px">
-        </div>
-    </figure>
-
-    <figure>
-        <div>
-            <img src="images/amaze.jpg" alt="" width="400px" height="400px">
-        </div>
-        <div class="b">
-            <div class="amaze">
-                <h3>史蒂芬 斯特兰奇</h3>
-
-                <span>
-                他走遍世界，只为了治好双手，最终，他在喜马拉雅山遇见了古一，被古一收为弟子，
-                他开始学习神秘的咒术与魔法，成为一代至尊魔法师—奇异博士。
-            </span>
-                <div class="bottom">
-                    <span>能    力：奇异博士身为至尊魔法师有着超乎想像的强大力量，同时他还受到由全
-                    视之神阿戈摩托、外神霍戈斯及地球古神之一的魔法女神奥姝图所组成的，名为“维山
-                    帝”的三位一体魔法至高的祝福。此外，在极少数的情况下他也会召唤多玛姆等恶魔的力量。
-                    </span>
-                </div>
-            </div>
-        </div>
-    </figure>
     <h3>新闻动态</h3>
     <div class="box3">
-        <div class="news">
-            <img src="images/new1.png" alt="">
-            <p>7月31日，吴亦凡因涉嫌强奸罪，目前已被朝阳公安分局依法刑事拘留，案件侦办工作正在进
-                一步开展。8月1日晚，吴亦凡及其工作室微博账号均已被注销。</p>
-        </div>
-        <div class="news">
-            <img src="images/new2.png" alt="">
-            <p>一起“多人运动”,罗志祥有了一个“时间管理大师”的美称。 其实在周扬青公开控诉罗志祥
-                “多人运动”之前,“极限男人帮”的兄弟们就曾告诫罗志祥“对周扬青好点”。 </p>
-        </div>
-        <div class="news">
-            <img src="images/new3.png" alt="">
-            <p>艳照门是2008年初，网友奇拿在天涯社区发布了一系列关于陈冠希和一些女艺人之间的自拍
-                私密照和其他图片（讳称“艳照”），在网络反响极大并引发多方关注。</p>
-        </div>
-        <div class="news">
-            <img src="images/new4.png" alt="">
-            <p>小罗伯特·唐尼的父亲老罗伯特·唐尼是一名电影编剧、导演，创作了很多艺术电影，拥有一
-                半的立陶宛犹太人血统、四分之一的匈牙利犹太人血统、四分之一的爱尔兰血统.
-            </p>
-        </div>
+
     </div>
+    <script src="js/indexService.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </div>
 
 <footer>
     <div class="box4">
         <div class="evil">
-            <img src="images/add.png" width="120px" height="110px">
-            <p>罗门镇天魂村88号</p>
+            <img src="images/foot0.png" width="120px" height="110px">
+            <p>罗门镇天魂村</p>
         </div >
         <div class="evil">
-            <img src="images/vector.png" width="130px" height="110px">
+            <img src="images/foot1.png" width="130px" height="110px">
             <p>admin@example.com</p>
         </div>
         <div class="evil">
-            <img src="images/service.png" width="120px" height="110px">
+            <img src="images/foot2.png" width="120px" height="110px">
             <p>PC-12138</p>
         </div>
         <div class="evil">
-            <img src="images/code.png" width="200px" height="200px">
+            <img src="images/foot3.png" width="200px" height="200px">
             <p>扫一扫,地狱终生游</p>
         </div>
     </div>

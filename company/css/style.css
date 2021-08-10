@@ -132,6 +132,7 @@ header{
 
 .box2{
     width: 900px;
+    height:200px;
     margin: 0 auto;
     background-color: white;
     display: flex;
@@ -159,10 +160,11 @@ header{
 
 figure{
     width: 900px;
-    height: 450px;
+    height: 1350px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 figure img{
@@ -171,8 +173,16 @@ figure img{
     margin: 10px;
 }
 
+.tup{
+    width: 900px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .b{
     width: 450px;
+    height: 440px;
     padding: 0 30px;
 }
 
@@ -192,6 +202,7 @@ h3{
 
 .box3{
     width: 900px;
+    height: 270px;
     margin: 0 auto;
     padding: 10px;
     display: flex;

@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>新闻</title>
-
+    <script src="../danMu/js/jquery-3.3.1.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="css/news.css">
 </head>
 <body>
@@ -23,137 +25,19 @@
 </header>
 
 <hgroup>
-    <div class="line1">
-        <img src="images/line.jpg" height="20px" width="600px">
+    <div class="col-12">
+        <div class="line1">
+            <img src="images/line.jpg" height="20px" width="600px">
+        </div>
+        <div class="NEW">
+            <span>最新动态 WHAT'S</span>
+        </div>
+        <p>NEW!</p>
     </div>
-    <div class="NEW">
-        <span>最新动态 WHAT'S</span>
-    </div>
-    <p>NEW!</p>
 </hgroup>
 
 <section>
-    <figure>
-        <div class="box">
-            <div>
-                <a href="news-detail.html">
-                    <img src="images/black.jpg" alt="">
-                </a>
-            </div>
-            <div class="text">
-                <h3>《黑寡妇》再发新剧照,计划于7月9日北美上映</h3>
-                <p>发布日期: 2021-7-9</p>
-                <span>《黑寡妇》是由凯特·绍特兰执导，斯嘉丽·约翰逊、佛罗伦斯·珀、蕾切尔·薇姿等主演的科幻动作电影。
-                        影片讲述了黑寡妇将遭遇与她过去相关的一场危险阴谋中，直面那些更为黑暗经历的故事。
-                        该片于2021年7月9日在美国上映，中国大陆待定。</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div>
-                <a href="news-detail.html">
-                    <img src="images/black.jpg" alt="">
-                </a>
-            </div>
-            <div class="text">
-                <h3>《黑寡妇》再发新剧照,计划于7月9日北美上映</h3>
-                <p>发布日期: 2021-7-9</p>
-                <span>《黑寡妇》是由凯特·绍特兰执导，斯嘉丽·约翰逊、佛罗伦斯·珀、蕾切尔·薇姿等主演的科幻动作电影。
-                        影片讲述了黑寡妇将遭遇与她过去相关的一场危险阴谋中，直面那些更为黑暗经历的故事。
-                        该片于2021年7月9日在美国上映，中国大陆待定。</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div>
-                <a href="news-detail.html">
-                    <img src="images/black.jpg" alt="">
-                </a>
-            </div>
-            <div class="text">
-                <h3>《黑寡妇》再发新剧照,计划于7月9日北美上映</h3>
-                <p>发布日期: 2021-7-9</p>
-                <span>《黑寡妇》是由凯特·绍特兰执导，斯嘉丽·约翰逊、佛罗伦斯·珀、蕾切尔·薇姿等主演的科幻动作电影。
-                        影片讲述了黑寡妇将遭遇与她过去相关的一场危险阴谋中，直面那些更为黑暗经历的故事。
-                        该片于2021年7月9日在美国上映，中国大陆待定。</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div>
-                <a href="news-detail.html">
-                    <img src="images/black.jpg" alt="">
-                </a>
-            </div>
-            <div class="text">
-                <h3>《黑寡妇》再发新剧照,计划于7月9日北美上映</h3>
-                <p>发布日期: 2021-7-9</p>
-                <span>《黑寡妇》是由凯特·绍特兰执导，斯嘉丽·约翰逊、佛罗伦斯·珀、蕾切尔·薇姿等主演的科幻动作电影。
-                        影片讲述了黑寡妇将遭遇与她过去相关的一场危险阴谋中，直面那些更为黑暗经历的故事。
-                        该片于2021年7月9日在美国上映，中国大陆待定。</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div>
-                <a href="news-detail.html">
-                    <img src="images/black.jpg" alt="">
-                </a>
-            </div>
-            <div class="text">
-                <h3>《黑寡妇》再发新剧照,计划于7月9日北美上映</h3>
-                <p>发布日期: 2021-7-9</p>
-                <span>《黑寡妇》是由凯特·绍特兰执导，斯嘉丽·约翰逊、佛罗伦斯·珀、蕾切尔·薇姿等主演的科幻动作电影。
-                        影片讲述了黑寡妇将遭遇与她过去相关的一场危险阴谋中，直面那些更为黑暗经历的故事。
-                        该片于2021年7月9日在美国上映，中国大陆待定。</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div>
-                <a href="news-detail.html">
-                    <img src="images/black.jpg" alt="">
-                </a>
-            </div>
-            <div class="text">
-                <h3>《黑寡妇》再发新剧照,计划于7月9日北美上映</h3>
-                <p>发布日期: 2021-7-9</p>
-                <span>《黑寡妇》是由凯特·绍特兰执导，斯嘉丽·约翰逊、佛罗伦斯·珀、蕾切尔·薇姿等主演的科幻动作电影。
-                        影片讲述了黑寡妇将遭遇与她过去相关的一场危险阴谋中，直面那些更为黑暗经历的故事。
-                        该片于2021年7月9日在美国上映，中国大陆待定。</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div>
-                <a href="news-detail.html">
-                    <img src="images/black.jpg" alt="">
-                </a>
-            </div>
-            <div class="text">
-                <h3>《黑寡妇》再发新剧照,计划于7月9日北美上映</h3>
-                <p>发布日期: 2021-7-9</p>
-                <span>《黑寡妇》是由凯特·绍特兰执导，斯嘉丽·约翰逊、佛罗伦斯·珀、蕾切尔·薇姿等主演的科幻动作电影。
-                        影片讲述了黑寡妇将遭遇与她过去相关的一场危险阴谋中，直面那些更为黑暗经历的故事。
-                        该片于2021年7月9日在美国上映，中国大陆待定。</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div>
-                <a href="news-detail.html">
-                    <img src="images/black.jpg" alt="">
-                </a>
-            </div>
-            <div class="text">
-                <h3>《黑寡妇》再发新剧照,计划于7月9日北美上映</h3>
-                <p>发布日期: 2021-7-9</p>
-                <span>《黑寡妇》是由凯特·绍特兰执导，斯嘉丽·约翰逊、佛罗伦斯·珀、蕾切尔·薇姿等主演的科幻动作电影。
-                        影片讲述了黑寡妇将遭遇与她过去相关的一场危险阴谋中，直面那些更为黑暗经历的故事。
-                        该片于2021年7月9日在美国上映，中国大陆待定。</span>
-            </div>
-        </div>
-
+    <figure id="figure" class="col-9">
     </figure>
 </section>
 
@@ -161,19 +45,19 @@
     <footer>
         <div class="box4">
             <div class="evil">
-                <img src="images/add.png" width="120px" height="110px">
+                <img src="images/foot0.png" width="120px" height="110px">
                 <p>罗门镇天魂村88号</p>
             </div>
             <div class="evil">
-                <img src="images/vector.png" width="130px" height="110px">
+                <img src="images/foot1.png" width="130px" height="110px">
                 <p>admin@example.com</p>
             </div>
             <div class="evil">
-                <img src="images/service.png" width="120px" height="110px">
+                <img src="images/foot2.png" width="120px" height="110px">
                 <p>PC-12138</p>
             </div>
             <div class="evil">
-                <img src="images/code.png" width="200px" height="200px">
+                <img src="images/foot3.png" width="200px" height="200px">
                 <p>扫一扫,地狱终生游</p>
             </div>
         </div>
@@ -183,5 +67,8 @@
         </div>
     </footer>
 </footer>
+<script src="js/news.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 </body>
 </html>
