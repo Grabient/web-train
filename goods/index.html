@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>商品列表添加和删除</title>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <style>
@@ -16,7 +18,6 @@
 <h2>商品列表添加和删除</h2>
 <div id="message"></div>
 <ul id="goods">
-  <li>苹果</li>
 </ul>
 <div>
   <button id="delAllBtn">删除所有商品</button>
@@ -31,6 +32,18 @@
 <script src="../danMu/js/jquery-3.3.1.js"></script>
 <script>
   $(document).ready(function(){
+      axios.get("https://www.fastmock.site/mock/639fe8e80bf9ac99955afff4df0cce47/company/goods")
+        .then(res =>{
+            console.log(res.data);
+            let goods = $("#goods")
+
+            res.data.forEach(item =>{
+                goods.append(`
+                     <li>${item.name}  ${item.price}</li>
+                `)
+            })
+        })
+
       $('#add').click(function(){
         var val= $("#name").val();
         $("#name").val("");
