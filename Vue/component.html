@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <child @fa-add = "change" @fa-minus = "change" v-on:fa-add10="change" v-on:fa-decrease10="change"></child>
+    <h3>当前次数：{{num}}</h3>
+</div>
+
+<script src="component.js"></script>
+
+</body>
+
+</html>
+
